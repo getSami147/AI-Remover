@@ -1,4 +1,5 @@
 import 'package:ai_object_remover/view%20model/provider_controllers/galleryController.dart';
+import 'package:ai_object_remover/view%20model/provider_controllers/removeObjectController.dart';
 import 'package:ai_object_remover/view/home/homeScreen.dart';
 import 'package:ai_object_remover/view/onboardingScreen/splashScreen.dart';
 import 'package:flutter/material.dart';
@@ -7,6 +8,8 @@ import 'package:get/get.dart'; // Import GetX package
 
 void main() {
  Get.lazyPut(() => GalleryController());
+ Get.lazyPut(() => RemoveObjectController());
+ 
   runApp(const MyApp());
 }
 

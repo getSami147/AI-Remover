@@ -2,13 +2,11 @@ import 'package:ai_object_remover/res/Images.dart';
 import 'package:ai_object_remover/res/constant.dart';
 import 'package:ai_object_remover/res/widget.dart';
 import 'package:ai_object_remover/view%20model/provider_controllers/galleryController.dart';
-import 'package:ai_object_remover/view/home/editingScreen.dart';
+import 'package:ai_object_remover/view/removeObjects/objectRemoverMain.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:nb_utils/nb_utils.dart';
-
-import '../onboardingScreen/displayImageScreen.dart';
 
 class homeScreen extends StatefulWidget {
   const homeScreen({super.key});
@@ -137,7 +135,7 @@ _showModelBottomSheet(BuildContext context) {
                   // ignore: use_build_context_synchronously
                   Navigator.pop(context); // Close the bottom sheet
                   Future.delayed(const Duration(milliseconds: 200), () {
-                    Get.to(() => ObjectRemoverScreen());
+                    Get.to(() => ObjectRemoverMain());
                   });
                 }
               },
